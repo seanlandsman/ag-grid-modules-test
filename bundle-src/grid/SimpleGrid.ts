@@ -8,7 +8,9 @@ export class SimpleGrid {
     constructor(selector: string) {
         this.gridOptions = {
             columnDefs: this.createColumnDefs(),
-            rowData: this.createRowData()
+            rowData: this.createRowData(),
+            enableCharts: true,
+            enableRangeSelection: true
         };
 
         let eGridDiv: HTMLElement = <HTMLElement>document.querySelector(selector);
@@ -20,7 +22,7 @@ export class SimpleGrid {
         return [
             {headerName: "Make", field: "make"},
             {headerName: "Model", field: "model"},
-            {headerName: "Price", field: "price"}
+            {headerName: "Price", field: "price", enableValue: true}
         ];
     }
 

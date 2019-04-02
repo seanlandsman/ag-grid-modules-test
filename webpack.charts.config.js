@@ -2,7 +2,7 @@ const path = require('path');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const ROOT = path.resolve(__dirname, 'src');
+const ROOT = path.resolve(__dirname, 'bundle-src');
 const DESTINATION = path.resolve(__dirname, 'dist');
 
 module.exports = {
